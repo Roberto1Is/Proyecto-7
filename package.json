@@ -1,0 +1,44 @@
+{
+  "name": "Proyecto 7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development --watch",
+    "build:pack:dev": "webpack --mode development --env env=dev",
+    "build:pack:qa": "webpack --mode production --env env=qa",
+    "build:pack:prod": "webpack --mode production --env env=prod"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.12.3",
+  "dependencies": {
+    "devextreme": "^26.1.4",
+    "devextreme-react": "^26.1.4",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^8.0.1",
+    "@babel/preset-env": "^8.0.2",
+    "@babel/preset-react": "^8.0.1",
+    "@babel/preset-typescript": "^8.0.1",
+    "@types/node": "^26.2.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "babel-loader": "^10.1.1",
+    "css-loader": "^7.1.4",
+    "dotenv": "^17.4.2",
+    "html-webpack-plugin": "^5.6.8",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.6.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2",
+    "webpack": "^5.109.2",
+    "webpack-cli": "^7.2.2",
+    "webpack-dev-server": "^6.0.0"
+  }
+}
